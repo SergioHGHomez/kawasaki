@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer_mobile from '../layouts/Footer_mobile';
 import Header from '../layouts/Header';
 
 const Layout = ({ children }) => {
@@ -6,6 +7,7 @@ const Layout = ({ children }) => {
         <>
             <Header />
             <div className='layout'>{children}</div>
+            <Footer_mobile />
         </>
 
     );

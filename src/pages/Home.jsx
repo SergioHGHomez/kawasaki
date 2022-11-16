@@ -1,12 +1,13 @@
 import React from 'react';
+import '../styles/Home.scss';
 
 const Home = () => {
     return (
-        <div>
+        <main className='home'>
             <h1>
                 HOME
             </h1>
-        </div>
+        </main>
     );
 }
 
