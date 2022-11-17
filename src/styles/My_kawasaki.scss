@@ -1,0 +1,16 @@
+@import 'vars';
+
+.my-kawasaki{
+    margin: 26px;
+}
+
+.my-kawasaki h1{
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 26px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $--kawasaki_green;
+    text-transform: uppercase;
+    font-size: $--font_l;
+    font-weight: $--big;
+}
