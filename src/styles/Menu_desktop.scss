@@ -1,0 +1,45 @@
+@import 'vars';
+
+.Menu-desktop {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.Menu-desktop_item {
+    padding: 8px;
+}
+
+.Menu-desktop_item>p {
+    display: none;
+
+}
+
+.Menu-desktop_item>img {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (min-width: 1200px) {
+
+    .Menu-desktop_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Menu-desktop_item>img{
+        margin-right: 8px;
+    }
+
+    .Menu-desktop_item>p {
+        display: inline;
+        color: $--grey;
+        text-transform: uppercase;
+        font-size: $--font_standart;
+    }
+
+}

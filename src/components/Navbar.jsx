@@ -8,6 +8,7 @@ import Menu_mobile from "./Menu_mobile";
 import greenLines_img from "../assets/images/green_lines.jpg";
 import { useState } from "react";
 import '../styles/Navbar.scss';
+import Menu_desktop from "./Menu_desktop";
 
 
 const Navbar = () => {
@@ -20,34 +21,37 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar_main">
-      <a href="/" aria-label="go to home page">
-        <img className="navbar_logo" src={logo} alt="kawasaki logo" />
-      </a>
-      <ul className="navbar_list">
-        <li>
-          <a href="">
-            <img className="navbar_icons" src={wishListIcon} alt="wishlist" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img className="navbar_icons" src={testDriveIcon} alt="test drive" />
-          </a>
-        </li >
-        <li>
-          <a href="">
-            <img className="navbar_icons" src={dealerIcon} alt="dealer locator" />
-          </a>
-        </li>
-        <li>
-          <button className="navbar_menu-button" onClick={() => {menuToggle()}}>
-            <img className="navbar_icons" src={menuIcon} alt="menu options" />
-          </button>
-        </li>
-      </ul>
+        <a href="/" aria-label="go to home page">
+          <img className="navbar_logo" src={logo} alt="kawasaki logo" />
+        </a>
+        <ul className="navbar_list">
+          <li>
+            <a href="">
+              <img className="navbar_icons" src={wishListIcon} alt="wishlist" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img className="navbar_icons" src={testDriveIcon} alt="test drive" />
+            </a>
+          </li >
+          <li>
+            <a href="">
+              <img className="navbar_icons" src={dealerIcon} alt="dealer locator" />
+            </a>
+          </li>
+          <li>
+            <button className="navbar_menu-button" onClick={() => { menuToggle() }}>
+              <img className="navbar_icons" src={menuIcon} alt="menu options" />
+            </button>
+          </li>
+        </ul>
+        <div className="menuDesktop-container">
+          <Menu_desktop />
+        </div>
       </div>
       <img className="menuMobile_greenlines" src={greenLines_img} alt="" />
-      { menuOpen && <Menu_mobile />}
+      {menuOpen && <Menu_mobile />}
     </nav>
   );
 };
