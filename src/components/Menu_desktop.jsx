@@ -11,31 +11,41 @@ const Menu_desktop = () => {
     return (
         <ul className="Menu-desktop">
             <li className='Menu-desktop_item'>
-                <img src={user_icon} alt="" />
-                <p>My kawasaki</p>
+                <a href='/my-kawasaki'>
+                    <img src={user_icon} alt="" />
+                    <p>My kawasaki</p>
+                </a>
             </li>
             <li className='Menu-desktop_item'>
-                <img src={cart_icon} alt="" />
-                <p>Cart</p>
-                <p>(2)</p>
+                <a href="/shopping-cart">
+                    <img src={cart_icon} alt="" />
+                    <p>Cart</p>
+                    <p>(2)</p>
+                </a>
             </li>
             <li className='Menu-desktop_item'>
-                <img src={shopping_icon} alt="" />
-                <p>wishlist</p>
+                <a href="">
+                    <img src={shopping_icon} alt="" />
+                    <p>wishlist</p>
+                </a>
             </li>
             <li className='Menu-desktop_item'>
-                <img src={road_icon} alt="" />
-                <p>test ride</p>
+                <a href="">
+                    <img src={road_icon} alt="" />
+                    <p>test ride</p>
+                </a>
             </li>
             <li className='Menu-desktop_item'>
-                <img src={location_icon} alt="" />
-                <p>locate a dealer</p>
+                <a href="">
+                    <img src={location_icon} alt="" />
+                    <p>locate a dealer</p>
+                </a>
             </li>
             <li className='Menu-desktop_item'>
                 <SearchBarMobile />
             </li>
         </ul>
-     );
+    );
 }
- 
+
 export default Menu_desktop;

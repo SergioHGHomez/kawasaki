@@ -19,9 +19,9 @@ const Home_banner = () => {
                             </p>
                         </div>
                     </div>
-                    <div id="home-banner_slide1">
+                    <div id="home-banner_slide2">
                         <div className='home-banner_image'>
-                            <img id='home-banner_slide3' src="https://images.unsplash.com/photo-1587971051803-70bf6d4ae977?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="photo of the kawasaki ninja 400" /> 
+                            <img src="https://images.unsplash.com/photo-1587971051803-70bf6d4ae977?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="photo of the kawasaki ninja 400" /> 
                         </div>
                         <div className='home-banner_text'>
                             <h2>save up to $1,000* on Ninja 400</h2>
@@ -32,9 +32,9 @@ const Home_banner = () => {
                             </p>
                         </div>
                     </div>
-                    <div id="home-banner_slide1">
+                    <div id="home-banner_slide3">
                         <div className='home-banner_image'>
-                            <img id='home-banner_slide2' src="https://images.unsplash.com/photo-1611241443322-b5524914fe20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="photo of the kawasaki z400" />
+                            <img src="https://images.unsplash.com/photo-1611241443322-b5524914fe20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="photo of the kawasaki z400" />
                         </div>
                         <div className='home-banner_text'>
                             <h2>save up to $1,000* on Z400</h2>
@@ -51,7 +51,6 @@ const Home_banner = () => {
                     <a href="#home-banner_slide1"></a>
                     <a href="#home-banner_slide2"></a>
                     <a href="#home-banner_slide3"></a>
-
                 </nav>
 
             </div>

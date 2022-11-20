@@ -12,12 +12,16 @@
     padding: 8px;
 }
 
-.Menu-desktop_item>p {
+.Menu-desktop_item a{
+    text-decoration: none ;
+}
+
+.Menu-desktop_item a>p {
     display: none;
 
 }
 
-.Menu-desktop_item>img {
+.Menu-desktop_item a>img {
     width: 20px;
     height: 20px;
 }
@@ -29,13 +33,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
-    .Menu-desktop_item>img{
+
+    .Menu-desktop_item>img {
         margin-right: 8px;
     }
 
-    .Menu-desktop_item>p {
+    .Menu-desktop_item a>p {
         display: inline;
         color: $--grey;
         text-transform: uppercase;
