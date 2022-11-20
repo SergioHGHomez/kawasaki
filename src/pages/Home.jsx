@@ -1,12 +1,11 @@
 import React from 'react';
 import '../styles/Home.scss';
+import Home_banner from '../components/Home_banner';
 
 const Home = () => {
     return (
         <main className='home'>
-            <h1>
-                HOME
-            </h1>
+            <Home_banner />
         </main>
     );
 }

@@ -1,8 +1,9 @@
 @import 'vars';
 
 .footer_mobile{
+    bottom: 0px;
     background: $--black;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    margin-top:800px;
 }
