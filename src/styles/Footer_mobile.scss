@@ -1,9 +1,15 @@
 @import 'vars';
 
-.footer_mobile{
+.footer-mobile{
     bottom: 0px;
     background: $--black;
     display: flex;
     flex-direction: column;
-    margin-top:800px;
+}
+
+@media (min-width: 771px){
+    .footer-mobile{
+        display: none;
+        background: powderblue;
+    }
 }

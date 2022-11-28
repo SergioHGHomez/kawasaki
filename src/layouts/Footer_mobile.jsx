@@ -6,7 +6,7 @@ import '../styles/Footer_mobile.scss'
 const Footer_mobile = () => {
 
     return(
-        <footer className="footer_mobile">
+        <footer className="footer-mobile">
             <Moreinfo_mobile />
             <Footer_privacy />
         </footer>
