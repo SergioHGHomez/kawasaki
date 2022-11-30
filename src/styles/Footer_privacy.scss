@@ -1,14 +1,30 @@
 @import 'vars';
 
-.footer_privacy {
+.footer-privacy {
     background: $--black;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    grid-auto-rows: 125px;
+
 }
-.footer_privacy_text{
+
+.footer-privacy_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-privacy_text > h1{
+    color: $--white;
+    font-size: $--font_standart;
+    font-weight: $--light;
+}
+
+.footer-privacy_text {
     padding: 8px 48px 8px 48px;
 }
 
-.footer_privacy_text > p{
+.footer-privacy_text>p {
     margin: 0;
     margin-bottom: 22px;
     color: $--white;
@@ -17,7 +33,27 @@
     font-size: $--font_s;
 }
 
-.footer_privacy_list{
+.footer-privacy_app-section>h2 {
+    text-transform: capitalize;
+    color: $--white;
+    text-align: center;
+    font-family: $--secondary_font;
+    font-size: $--font_s;
+    font-weight: $--regular;
+}
+
+.footer-privacy_app-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-privacy_app-icons img {
+    width: 120PX;
+    object-fit: contain;
+
+}
+
+.footer-privacy_social-media-list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -25,6 +61,6 @@
 
 }
 
-.footer_privacy_list a img{
+.footer-privacy_social-media-list a img {
     width: 25px;
 }
