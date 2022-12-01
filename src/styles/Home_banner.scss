@@ -1,5 +1,9 @@
 @import 'vars';
 
+.home-banner{
+    margin-bottom: 50px;
+}
+
 .home-banner_slider-wrapper {
     position: relative;
     margin: 0 auto;
@@ -40,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 26px;
+    margin: 16px;
 }
 
 .home-banner_logo {
@@ -50,16 +54,17 @@
 .home-banner_text>h2 {
     color: $--white;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     padding: 0 2rem;
     margin: 16px 0;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: $--principal_font;
 }
 
 .home-banner_text>h3 {
     color: $--white;
     font-size: $--font_standart;
+    text-align: center;
 }
 
 .home-banner_text>button {
@@ -78,7 +83,7 @@
     color: $--white;
     font-family: $--secondary_font;
     font-size: $--font_xs;
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
 
