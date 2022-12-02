@@ -1,0 +1,37 @@
+@import 'vars';
+
+.featured-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-card>img{
+    width: 80%;
+    object-fit: contain;
+}
+
+.featured-card_model-info{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.featured-card>h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.green-line_price-info{
+    background: $--kawasaki_green_secondary;
+    height: 5px;
+    width: 30px;
+    margin: 12px;
+}
+
+.featured-card_price-info{
+    font-family: $--secondary_font;
+    font-size: 0.8rem;
+    color: $--grey;
+}

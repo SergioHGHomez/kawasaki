@@ -2,6 +2,7 @@ import React from 'react';
 import ninja_logo from '../assets/logos/ninja_logo.png';
 import sbk_logo from '../assets/logos/worldsbk-sbk-logo.png';
 import z_logo from '../assets/logos/z_logo.png';
+import old_logo from '../assets/logos/Old-Kawasaki-Logo.png';
 import '../styles/Home_banner.scss';
 
 const Home_banner = () => {
@@ -66,6 +67,20 @@ const Home_banner = () => {
                             </p>
                         </div>
                     </div>
+                    <div id="home-banner_slide5">
+                        <div className='home-banner_image'>
+                            <img src="https://i.postimg.cc/x13KMHMk/hero-victor.jpg" />
+                        </div>
+                        <div className='home-banner_text'>
+                            <img className='home-banner_logo' src={old_logo} alt="old kawasaki logo" />
+                            <h2>The new kawasaki victor 150</h2>
+                            <button>learn more</button>
+                            <p>
+                                *Model & year exclusions apply. Incentives are available at participating Kawasaki dealerships. Offer valid through 12/31/22. Subject to change without notice. Offer available on approved purchases of select new, unregistered Kawasaki vehicles. Experienced rider under controlled conditions. Do not attempt maneuvers beyond your capability. Accessorized unit shown.
+
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
                 <nav className='home-banner_nav'>
@@ -73,6 +88,7 @@ const Home_banner = () => {
                     <a href="#home-banner_slide2"></a>
                     <a href="#home-banner_slide3"></a>
                     <a href="#home-banner_slide4"></a>
+                    <a href="#home-banner_slide5"></a>
                 </nav>
 
             </div>
