@@ -14,7 +14,7 @@ const Featured = () => {
         image: 'https://i.postimg.cc/L5jtm3Zv/card-kawasaki-zx6r.png',
     }
     return (
-        <section className='featured'>
+        <section className='featured' id='main'>
             <h2>featured vehicles</h2>
             <div className='featured_cards-container'>
                 <Featured_card vehicle={ninja650} />
