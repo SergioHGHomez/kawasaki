@@ -9,10 +9,8 @@ const API = "https://kawasaki-api-shh.vercel.app/vehicles";
 const Featured = () => {
     const vehicles = useGetVehicles(API)
 
-    console.log(vehicles);
-
     return (
-        <section className='featured' id='main'>
+        <section className='featured'>
             <h2>featured vehicles</h2>
             <div className='featured_cards-container'>
                 {vehicles.map((vehicle) => (<Featured_card vehicle={vehicle}

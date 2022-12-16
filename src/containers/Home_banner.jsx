@@ -26,7 +26,7 @@ const Home_banner = () => {
                     </div>
                     <div id="home-banner_slide2">
                         <div className='home-banner_image'>
-                            <img src="https://photos.worldsbk.com/2021/09/19/00912_DCP_R9_Action.jpg" />
+                            <img src="https://photos.worldsbk.com/2021/09/19/00912_DCP_R9_Action.jpg" alt='photo of the kawasaki ZX10R motorcycle into a track corner' />
                         </div>
                         <div className='home-banner_text'>
                             <img className='home-banner_logo' src={sbk_logo} alt="superbikes championship category logo" />
@@ -69,7 +69,7 @@ const Home_banner = () => {
                     </div>
                     <div id="home-banner_slide5">
                         <div className='home-banner_image'>
-                            <img src="https://i.postimg.cc/x13KMHMk/hero-victor.jpg" />
+                            <img src="https://i.postimg.cc/x13KMHMk/hero-victor.jpg"  alt='photo of the kawasaki victor 150 motorcycle'/>
                         </div>
                         <div className='home-banner_text'>
                             <img className='home-banner_logo' src={old_logo} alt="old kawasaki logo" />
@@ -84,11 +84,11 @@ const Home_banner = () => {
 
                 </div>
                 <nav className='home-banner_nav'>
-                    <a href="#home-banner_slide1"></a>
-                    <a href="#home-banner_slide2"></a>
-                    <a href="#home-banner_slide3"></a>
-                    <a href="#home-banner_slide4"></a>
-                    <a href="#home-banner_slide5"></a>
+                    <a href="#home-banner_slide1" aria-label='slider 1'></a>
+                    <a href="#home-banner_slide2" aria-label='slider 2'></a>
+                    <a href="#home-banner_slide3" aria-label='slider 3'></a>
+                    <a href="#home-banner_slide4" aria-label='slider 4'></a>
+                    <a href="#home-banner_slide5" aria-label='slider 5'></a>
                 </nav>
 
             </div>

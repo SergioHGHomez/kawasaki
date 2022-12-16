@@ -50,7 +50,7 @@ const Navbar = () => {
           <Menu_desktop />
         </div>
       </div>
-      <img className="menuMobile_greenlines" src={greenLines_img} alt="" />
+      <img className="menuMobile_greenlines" src={greenLines_img} alt="" aria-hidden='true' />
       {menuOpen && <Menu_mobile />}
     </nav>
   );

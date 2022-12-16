@@ -4,6 +4,7 @@
     background-color: $--black;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header_skip-link{
@@ -17,6 +18,7 @@
     transform: translateY(-51px);
     transition: transform 0.3S;
     text-align: center;
+    position: absolute;
 }
 
 .header_skip-link:focus , .header_skip-link:active{
