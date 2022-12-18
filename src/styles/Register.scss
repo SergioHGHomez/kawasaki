@@ -1,0 +1,71 @@
+@import 'vars';
+
+.Register{
+    background: $--white;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.Register h2{
+    text-transform: uppercase;
+    font-size: $--font_m;
+    font-weight: $--regular;
+    
+}
+
+.Register p{
+    font-size: $--font_xs;
+    font-family: $--secondary_font;
+    text-transform: capitalize;
+    margin-bottom: 26px;
+}
+
+.Register label{
+    text-transform: capitalize;
+    font-family: $--secondary_font;
+}
+
+.Register input[type=text]{
+    height: 36px;
+    border: 1px solid $--light_grey;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.Register_options{
+    display: grid;
+    grid-template-columns: 20px auto;
+    row-gap: 16px;
+    margin-bottom: 16px;
+}
+
+.Register_options span{
+    font-family: $--secondary_font;
+    font-size: $--font_s;
+    
+}
+
+.Register_button{
+    background: $--black;
+    display: flex;
+    width: 140px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Register_button img{
+    width: 10px;
+    margin-right: 8px;
+}
+
+.Register_button p{
+    text-transform: uppercase;
+    color: $--white;
+    font-family: $--principal_font;
+    font-size: $--font_m;
+    margin: 0;
+}

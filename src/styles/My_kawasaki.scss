@@ -1,9 +1,5 @@
 @import 'vars';
 
-.my-kawasaki{
-    margin: 26px;
-}
-
 .my-kawasaki h1{
     text-align: center;
     margin-top: 56px;
@@ -13,4 +9,28 @@
     text-transform: uppercase;
     font-size: $--font_l;
     font-weight: $--big;
+}
+
+@media (min-width:769px) {
+    .my-kawasaki{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto ;
+    }
+    
+    .my-kawasaki h1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (min-width:995px) {
+    .my-kawasaki{
+        padding-right: 26px;
+    }
+
+    .my-kawasaki h1{
+        font-size: $--font_xl;
+    }
+    
 }
