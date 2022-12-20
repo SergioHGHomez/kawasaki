@@ -1,0 +1,97 @@
+@import 'vars';
+
+.diskBox{
+    padding: 44px;
+}
+
+.diskBox>h3{
+    text-transform: uppercase;
+    font-size: $--font_s;
+    font-weight: $--regular;
+    margin-bottom: 8px;
+
+}
+
+.diskBox_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.diskBox_form h4{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: $--regular;
+    font-size: $--font_s;
+    margin-bottom: 8px;
+}
+
+.diskBox_form input{
+    height: 36px;
+    margin-bottom: 26px;
+    border: 0.5px solid $--base-color;
+    border-radius: 5px;
+}
+
+.diskBox button{
+    background-color: $--black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.diskBox button img{
+    width: 10px;
+    margin-right: 8px;
+}
+
+.diskBox button p{
+    color: $--white;
+    text-transform: uppercase;
+    font-family: $--principal_font;
+    font-size: $--font_standart;
+}
+
+.diskbox_subtotal-section{
+    display: grid;
+    grid-template-areas: "subtotal value"
+    "info info";
+    margin: 26px 0 26px;
+}
+
+.diskbox_subtotal-section h4{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: $--font_s;
+}
+
+.diskbox_subtotal-value{
+    margin: 0;
+}
+
+.diskbox_subtotal-info{
+    margin: 0;
+    text-transform: capitalize;
+    font-family: $--secondary_font;
+    font-size: $--font_s;
+
+}
+
+.diskBox_disclaimer>p{
+    font-family: $--secondary_font;
+    font-size: $--font_xs;
+    line-height: 20px;
+}
+
+@media (min-width: 771px) {
+    .diskBox{
+        background: $--very-light_grey;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        position: sticky;
+        top: 0;
+        
+    }
+
+     
+}

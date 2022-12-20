@@ -8,10 +8,11 @@
 }
 
 .shopping-card>img {
-    width: 270px;
+    width: 80%;
+    object-fit: contain;
 }
 
-.shopping-card>h2 {
+.shopping-card>h3 {
     font-size: $--font_standart;
     font-family: $--principal_font;
     font-weight: $--big;
@@ -19,7 +20,7 @@
     margin: 0;
 }
 
-.shopping-card>p:nth-of-type(1) {
+.shopping-card_information>p:nth-of-type(1) {
     font-size: $--font_standart;
     font-family: $--secondary_font;
     font-weight: $--regular;
@@ -27,15 +28,15 @@
 
 }
 
-.shopping-card>label {
+.shopping-card_information>label {
     font-size: $--font_s;
 }
 
-.quantitiContainer{
- margin-bottom: 48px;   
+.quantitiContainer {
+    margin-bottom: 48px;
 }
 
-.quantitiContainer select{
+.quantitiContainer select {
     width: 64px;
     height: 36px;
     padding: 4px;
@@ -44,7 +45,7 @@
     margin-right: 26px;
 }
 
-.quantitiContainer button{
+.quantitiContainer button {
     width: 72px;
     height: 42px;
     background: $--black;
@@ -55,25 +56,64 @@
     text-transform: uppercase;
 }
 
-.shopping-card_price{
+.shopping-card_price {
     font-size: $--font_l;
     font-weight: $--big;
 }
 
-.shopping-card_remove{
+.shopping-card_remove {
     display: flex;
     background: none;
     border: none;
     align-items: center;
 }
 
-.shopping-card_remove img{
+.shopping-card_remove img {
     width: 16px;
     margin-right: 8px;
 }
 
-.shopping-card_remove p{
+.shopping-card_remove p {
     font-family: $--principal_font;
     color: $--grey;
     text-decoration: underline;
+}
+
+@media (min-width:771px) {
+    .shopping-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "image name name"
+        "image update price"
+        "image .  options"
+        ;
+    }
+
+    .shopping-card>img{
+        grid-area: image;
+    }
+
+    .shopping-card>h3{
+        grid-area: name;
+        font-size: $--font_xl;
+
+    }
+
+    .shopping-card_information{
+        grid-area: update;
+    }
+
+    .shopping-card_price{
+        grid-area: price;
+        font-size: $--font_xxxl;
+        justify-self: end;
+    }
+
+    .shopping-card_remove{
+        grid-area: options;
+        justify-self: end;
+    }
+
 }

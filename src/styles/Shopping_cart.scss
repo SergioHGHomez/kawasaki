@@ -4,7 +4,7 @@
     padding-top: 16px;
 }
 
-.shopping-cart h1{
+.shopping-cart h2{
     font-size: $--font_l;
     font-weight: $--regular;
     margin: 32px;
@@ -14,3 +14,18 @@
     border-bottom: 1px solid $--kawasaki_green;
 }
 
+
+@media (min-width: 771px) {
+    .shopping-cart{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .shopping-cart>h2{
+        font-size: $--font_xxl;
+        grid-column: 1 / 3;
+    }
+
+    
+}
